@@ -107,7 +107,7 @@ export default function GaleriePage() {
       {/* Grid */}
       <section className="py-12 px-6 bg-krem">
         <div className="max-w-6xl mx-auto columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
-          {filtered.map((foto, i) => (
+          {filtered.map((foto) => (
             <div
               key={foto.src}
               className="relative overflow-hidden rounded-2xl cursor-pointer group break-inside-avoid"
@@ -121,7 +121,7 @@ export default function GaleriePage() {
                 className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-kava/0 group-hover:bg-kava/40 transition-colors duration-300 flex items-end p-5">
-                <span className="text-krem font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0 transition-transform">
+                <span className="text-krem font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
                   {foto.alt}
                 </span>
               </div>
