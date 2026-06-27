@@ -3,6 +3,7 @@ import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import DisclaimerPopup from "@/components/ui/DisclaimerPopup";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Navbar />
         <main className="pt-16 page-transition">{children}</main>
         <Footer />
+        <DisclaimerPopup />
       </body>
     </html>
   );
